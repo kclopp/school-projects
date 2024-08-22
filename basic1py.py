@@ -77,3 +77,23 @@ print("List:", numbers_list)  # Print the list of numbers
 print("Tuple:", numbers_tuple)  # Print the tuple of numbers
 '''
 
+# Ex7 Write a Python program to accept a filename from the user and print the extension of that.
+'''
+file_name = input(" Please enter the filename: ")  # Get the filename from the user
+
+file_split = file_name.split(".")  # Split the filename into a list using the dot as a separator
+
+file_split.reverse()  # Reverse the list to get the extension as the first element
+
+print(str(file_split[0]))  # Print the extension of the file
+'''
+
+# Ex8 Write a Python program to display the first and last colors from the following list.
+'''
+color_list = ["Red", "Green", "White", "Black"]  # Create a list of colors
+
+print("First color:", color_list[0])  # Print the first color in the list
+
+print("Last color:", color_list[-1])  # Print the last color in the list
+'''
+
