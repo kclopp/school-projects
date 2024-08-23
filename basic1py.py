@@ -97,3 +97,13 @@ print("First color:", color_list[0])  # Print the first color in the list
 print("Last color:", color_list[-1])  # Print the last color in the list
 '''
 
+# Ex9 Write a Python program to display the examination schedule. (extract the date from exam_st_date).
+'''
+import string
+
+exam_st_date = (11, 12, 2014)  # Create a tuple with the examination date
+
+print("The examination will start from: %i / %i / %i" % exam_st_date)  # Print the examination date
+
+print(f"The examination will start from: {exam_st_date[0]} / {exam_st_date[1]} / {exam_st_date[2]}")
+'''
