@@ -107,3 +107,24 @@ print("The examination will start from: %i / %i / %i" % exam_st_date)  # Print t
 
 print(f"The examination will start from: {exam_st_date[0]} / {exam_st_date[1]} / {exam_st_date[2]}")
 '''
+
+# Ex10 Write a Python program that accepts an integer (n) and computes the value of n+nn+nnn.
+'''
+s1 = input("Please enter a sample value in the form of an integer: ")
+
+s2 = s1 + s1
+
+s3 = s1 + s1 + s1
+
+print(int(s1) + int(s2) + int(s3))
+'''
+
+# Ex11 Write a Python program to print the documents (syntax, description, etc.) of Python built-in function(s).
+'''
+function = input("Please enter the name of the function you would like to know more about: ")
+
+print(f"Documentation for {function}(): ")
+help(eval(function))
+
+print('\n' + '='*80 + '\n')
+'''
