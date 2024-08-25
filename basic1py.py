@@ -138,5 +138,54 @@ month = int(input("Please enter the month by number:"))
 
 print(calendar.month(year,month))
 '''
+# Ex13 Write a Python program to print the following here document.
+'''
+here_document = """ a string that you "don't" have to escape
+This
+is a ....... multi-line
+heredoc string --------> example"""
+
+print(here_document)
+'''
+
+# Ex14 Write a Python program to calculate number of days between two dates.
+'''
+import datetime
+
+d1 = input("Please enter the first date in the format YYYY-MM-DD: ")
+d2 = input("Please enter the second date in the format YYYY-MM-DD: ")
+
+date1 = datetime.datetime.strptime(d1, "%Y-%m-%d")
+date2 = datetime.datetime.strptime(d2, "%Y-%m-%d")
+
+delta = date2 - date1
+
+print(f"There are {delta.days} days between {d1} and {d2}")
+'''
+
+# Ex15 Write a Python program to get the volume of a sphere with radius 6.
+'''
+import math
+
+radius = 6
+
+volume = (3/4) * math.pi * (radius ** 3)
+
+print(f"The volume of a sphere with radius {radius} is {volume}")
+'''
+
+# Ex16 Write a Python program to get the difference between a given number and 17, if the number is greater than 17 return double the absolute difference.
+'''
+n1 = int(input("Please enter a number: "))
+
+n2 = 17
+
+dif = abs(n1 - n2)
+
+if n1 > n2:
+    print(dif * 2)
+else:
+    print(dif)
+'''
 
 
