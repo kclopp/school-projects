@@ -233,3 +233,35 @@ value = input("Please enter a string: ")
 
 print(value * n1)
 '''
+
+#Ex21 Write a Python program to find whether a given number (accept from the user) is even or odd, print out an appropriate message to the user.
+'''
+n1 = float(input("Please enter a number: "))
+if n1 % 2 == 0:
+    print("The number is even")
+else:
+    print("The number is odd")
+'''
+
+# Ex22 Write a Python program to count the number 4 in a given list.
+'''
+import random 
+
+num_list = list()
+i = 0
+count = 0
+
+while i < 100:
+    i = i + 1
+    num_list.append(random.randint(1,10))
+
+for num in num_list:
+    if num == 4:
+        count = count + 1
+
+print(f"The number 4 appears {count} times in the list {num_list}")
+'''
+
+
+
+
