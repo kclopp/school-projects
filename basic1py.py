@@ -187,5 +187,49 @@ if n1 > n2:
 else:
     print(dif)
 '''
-Test
 
+# Ex17 Write a Python program to test whether a number is within 100 of 1000 or 2000.
+'''
+n1 = int(input("Please enter a number: "))
+
+if abs(1000 - n1) <= 100:
+    print("The number is within 100 of 1000")
+elif abs(2000 - n1) <= 100:
+    print("The number is within 100 of 2000")
+else:
+    print("The number is not within 100 of 1000 or 2000")
+'''
+
+# Ex18 Write a Python program to calculate the sum of three given numbers, if the values are equal then return three times of their sum.
+'''
+n1 = int(input("Please enter the first number: "))
+n2 = int(input("Please enter the second number: "))
+n3 = int(input("Please enter the third number: "))
+
+sum = n1 + n2 + n3
+
+if n1 == n2 == n3:
+    print(sum * 3)
+else:
+    print(sum)
+'''
+
+# Ex19 Write a Python program to get a new string from a given string where "Is" has been added to the front. If the given string already begins with "Is" then return the string unchanged.
+'''
+value = input("Please enter a string: ")
+
+if value[:2] == "Is":
+    print(value)
+else:
+    print("Is" + value)
+'''
+
+# Ex20 Write a Python program to get a string which is n (non-negative integer) copies of a given string.
+'''
+n1 = int(input("Please enter a non-negative integer: "))
+n1 = abs(n1)
+
+value = input("Please enter a string: ")
+
+print(value * n1)
+'''
