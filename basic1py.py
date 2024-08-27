@@ -306,6 +306,52 @@ for i in listOfInt:
     print("*" * int(i))
 '''
 
+# Ex27 Write a Python program to concatenate all elements in a list into a string and return it.
+'''
+listOfStr = input("Please list strings seperated by a comma ")
+
+listOfStr = listOfStr.replace(" ", "")
+
+listOfStr = listOfStr.split(",")
+
+print("".join(listOfStr))
+'''
+
+# Ex28 Write a Python program to print all even numbers from a given numbers list in the same order and stop the printing if any numbers that come after 237 in the sequence.
+'''
+numbers = [386, 462, 47, 418, 907, 344, 236, 375, 823, 566, 597, 978, 328, 615, 953, 345, 399, 162, 758, 219, 918, 237, 412, 566, 826, 248, 866, 950, 626, 949, 687, 217]
+
+numList = []
+for num in numbers:
+    if num == 237:
+        break
+    elif num % 2 == 0:
+        numList.append(num)
+
+print(numList)
+
+numList.sort()
+
+print(numList)
+'''
+
+# Ex29 Write a Python program to print out a set containing all the colors from color_list_1 which are not present in color_list_2.
+'''
+color_list_1 = set(["White", "Black", "Red"])
+color_list_2 = set(["Red", "Green"])
+
+print(color_list_1.difference(color_list_2))
+'''
+
+# Ex30 Write a Python program that will accept the base and height of a triangle and compute the area.
+
+base = float(input("Please enter the base of the triangle: "))
+height = float(input("Please enter the height of the triangle: "))
+area = (base * height) / 2
+print(f"The area of the triangle with base {base} and height {height} is {area}")
+
+
+
 
 
 
