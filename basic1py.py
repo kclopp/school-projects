@@ -262,6 +262,52 @@ for num in num_list:
 print(f"The number 4 appears {count} times in the list {num_list}")
 '''
 
+# Ex23 Write a Python program to get the n (non-negative integer) copies of the first 2 characters of a given string. Return the n copies of the whole string if the length is less than 2.
+'''
+n1 = int(input("Please enter a non-negative integer: "))
+s1 = input("Please enter a string: ")
+
+if len(s1) < 2:
+    print(s1 * n1)
+else:
+    print(s1[:2] * n1)
+'''
+
+# Ex24 Write a Python program to test whether a passed letter is a vowel or not.
+'''
+c1 = input("Please enter a letter: ")
+vowels = ['a','e','i','o','u']
+
+if c1 in vowels:
+    print("The letter is a vowel")
+else:
+    print("The letter is not a vowel")
+'''
+
+# Ex25 Write a Python program to check whether a specified value is contained in a group of values.
+'''
+valGroup = [1, 5, 8, 3]
+
+val = int(input("Please enter a value: "))
+
+if val in valGroup:
+    print(f"The value {val} is in the group {valGroup}")
+else:
+    print(f"The value {val} is not in the group {valGroup}")
+'''
+
+# Ex26 Write a Python program to create a histogram from a given list of integers.
+'''
+listOfInt = input("Please list integers seperated by a comma ")
+
+listOfInt = listOfInt.split(",")
+
+for i in listOfInt:
+    print("*" * int(i))
+'''
+
+
+
 
 
 
