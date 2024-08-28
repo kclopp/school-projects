@@ -344,16 +344,32 @@ print(color_list_1.difference(color_list_2))
 '''
 
 # Ex30 Write a Python program that will accept the base and height of a triangle and compute the area.
-
+'''
 base = float(input("Please enter the base of the triangle: "))
 height = float(input("Please enter the height of the triangle: "))
 area = (base * height) / 2
 print(f"The area of the triangle with base {base} and height {height} is {area}")
+'''
 
+# Ex31 Write a Python program that computes the greatest common divisor (GCD) of two positive integers.
+'''
+n1 = int(input("Please input positave int #1 "))
+n2 = int(input("Please input positive int #2 "))
 
-
-
-
-
-
-
+if n1 > n2:
+    i = n2
+    while i > 0:
+        if ((n1 % i) == 0) & ((n2 % i) == 0):
+            print(i)
+            break
+        else:
+            i = i - 1
+else:
+    i = n1
+    while i > 0:
+        if ((n1 % i) == 0) & ((n2 % i) == 0):
+            print(i)
+            break
+        else:
+            i = i - 1
+'''
