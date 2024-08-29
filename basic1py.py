@@ -373,3 +373,67 @@ else:
         else:
             i = i - 1
 '''
+
+# Ex32 Write a Python program to get the least common multiple (LCM) of two positive integers.
+'''
+n1 = int(input("Please input positave int #1 "))
+n2 = int(input("Please input positive int #2 "))
+
+if n2 > n1:
+    k = n2
+    n2 = n1
+    n1 = k
+
+i = n2
+while True:
+    if (i % n1 == 0) & (i % n2 == 0):
+        print(i)
+        break
+    else:
+        i = i + 1
+'''
+
+# Ex33 Write a Python program to sum of three given integers. However, if two values are equal sum will be zero.
+'''
+n1 = int(input("Please input int #1 "))
+n2 = int(input("Please input int #2 "))
+n3 = int(input("Please input int #3 "))
+
+if n1 == n2:
+    print(0)
+elif n1 == n3:
+    print(0)
+elif n2 == n3:
+    print(0)
+else:
+    print(n1 + n2 + n3)
+'''
+
+# Ex34 Write a Python program to sum of two given integers. However, if the sum is between 15 to 20 it will return 20.
+'''
+n1 = int(input("Please input int #1 "))
+n2 = int(input("Please input int #2 "))
+
+sum = n1 + n2
+
+if sum >= 15 & sum <= 20:
+    print(20)
+else:
+    print(sum)
+'''
+
+# Ex35 Write a Python program that will return true if the two given integer values are equal or their sum or difference is 5.
+'''
+n1 = int(input("Please input int #1 "))
+n2 = int(input("Please input int #2 "))
+
+if n1 == n2:
+    print(True)
+elif abs(n1 - n2) == 5:
+    print(True)
+elif n1 + n2 == 5:
+    print(True)
+else:
+    print(False)
+'''
+
