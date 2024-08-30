@@ -493,6 +493,40 @@ distance = math.sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2)
 print(f"The distance between the points ({x1}, {y1}) and ({x2}, {y2}) is {distance}")
 '''
 
+# Ex41 Write a Python program to check whether a file exists.  
+'''
+fileName = input("Please input the file name ")
 
+try:
+    with open(fileName, "r") as file:
+        print(f"The file {fileName} exists")
+except FileNotFoundError:
+    print(f"The file {fileName} does not exist")
+except:
+    print("An error occurred")
+'''
+
+# Ex42 Write a Python program to determine if a Python shell is executing in 32bit or 64bit mode on OS.
+'''
+import platform
+
+print(platform.architecture()[0])
+'''
+
+# Ex43 Write a Python program to get OS name, platform and release information.
+'''
+import os, platform
+
+print(os.name)
+print(platform.system())
+print(platform.release())
+'''
+
+# Ex44 Write a Python program to locate Python site-packages.
+'''
+import site
+
+print(site.getsitepackages())
+'''
 
 
