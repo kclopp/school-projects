@@ -437,3 +437,62 @@ else:
     print(False)
 '''
 
+# Ex36 Write a Python program to add two objects if both objects are an integer type.
+'''
+n1 = 1
+n2 = "cat"
+
+if type(n1) == int and type(n2) == int:
+    print(n1 + n2)
+else:
+    print("The objects are not both integers")
+'''
+
+# Ex37 Write a Python program to display your details like name, age, address in three different lines.
+'''
+profile = {
+    "name": "John Doe",
+    "age": 30,
+    "address": "123 Main St"
+}
+
+print(f"Name: {profile['name']}\nAge: {profile['age']}\nAddress: {profile['address']}")
+'''
+
+# Ex38 Write a Python program to solve (x + y) * (x + y).
+'''
+x = int(input("Please input x "))
+y = int(input("Please input y "))
+
+print((x + y) * (x+y))
+print((x + y) ** 2)
+'''
+
+# Ex39 Write a Python program to compute the future value of a specified principal amount, rate of interest, and a number of years.
+'''
+principal = float(input("Please input the principal amount "))
+rate = float(input("Please input the rate of interest "))
+years = float(input("Please input the number of years "))
+
+future_value = principal * ((1 + rate) ** years)
+
+print(f"The future value of the principal amount {principal} with a rate of interest {rate} over {years} years is {future_value}")
+'''
+
+# Ex40 Write a Python program to compute the distance between the points (x1, y1) and (x2, y2).
+'''
+import math
+
+x1 = float(input("Please input x1 "))
+y1 = float(input("Please input y1 "))
+x2 = float(input("Please input x2 "))
+y2 = float(input("Please input y2 "))
+
+distance = math.sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2)
+
+print(f"The distance between the points ({x1}, {y1}) and ({x2}, {y2}) is {distance}")
+'''
+
+
+
+
