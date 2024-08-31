@@ -580,5 +580,13 @@ print(d1)
 print("Hello", end="")
 '''
 
+# Ex51 Write a Python program to determine the profiling of Python progrmas.
+
+import cProfile
+
+def sum():
+    print (1+2)
+
+cProfile.run('sum()')
 
 
