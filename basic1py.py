@@ -529,4 +529,56 @@ import site
 print(site.getsitepackages())
 '''
 
+# Ex45 Write a python program to call an external command in Python.
+'''
+from subprocess import run
+
+command = input("Please input the command you would like to run ")
+
+run(command, shell=True)
+'''
+
+# Ex46 Write a python program to get the path and name of the file that is currently executing.
+'''
+import os
+
+print(__file__)
+
+print(os.path.realpath(__file__))
+'''
+
+# Ex47 Write a Python program to find out the number of CPUs using.
+'''
+import os
+
+print(os.cpu_count())
+'''
+
+# Ex48 Write a Python program to parse a string to Float or Integer.
+'''
+s1 = input("Please input a string ")
+
+try:
+    print(float(s1))
+    print(int(float(s1)))
+except:
+    print("The string is not a number")
+'''
+
+# Ex49 Write a Python program to list all files in a directory in Python.
+'''
+d1 = {}
+
+for i in range(10):
+    d1.update({i: i * 5})
+
+print(d1)
+'''
+
+# Ex50 Write a Python program to print without newline or space.
+'''
+print("Hello", end="")
+'''
+
+
 
