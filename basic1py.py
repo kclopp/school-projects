@@ -581,12 +581,20 @@ print("Hello", end="")
 '''
 
 # Ex51 Write a Python program to determine the profiling of Python progrmas.
-
+'''
 import cProfile
 
 def sum():
     print (1+2)
 
 cProfile.run('sum()')
+'''
+
+# Ex52 Write a Python program to print to stderr.
+'''
+import sys
+
+sys.stderr.write("This is an error message\n")
+'''
 
 
