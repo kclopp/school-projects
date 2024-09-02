@@ -597,4 +597,34 @@ import sys
 sys.stderr.write("This is an error message\n")
 '''
 
+# Ex53 Write a python program to access environment variables.
+'''
+import os
+
+print(os.getenv("PATH"))
+'''
+
+# Ex54 Write a Python program to get the current username
+'''
+import os
+
+print(os.getlogin())
+'''
+
+# Ex55 Write a Python to find local IP addresses using Python's stdlib
+'''
+import socket
+
+local_hostname = socket.gethostname()
+
+local_fqdn = socket.getfqdn()
+
+ip_address = socket.gethostbyname(local_hostname)
+
+print(f"Local Hostname: {local_hostname}")
+print(f"Local FQDN: {local_fqdn}")
+print(f"IP Address: {ip_address}")
+'''
+
+
 
