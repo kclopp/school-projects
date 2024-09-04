@@ -626,5 +626,19 @@ print(f"Local FQDN: {local_fqdn}")
 print(f"IP Address: {ip_address}")
 '''
 
+# Ex56 Write a Python program to get height and the width of console window.
+
+import os, shutil
+
+def get_console_size():
+    size = shutil.get_terminal_size()
+    return size
+
+size = get_console_size()
+
+print(f"Console width: {size.columns}")
+print(f"Console height: {size.lines}")
+
+
 
 
