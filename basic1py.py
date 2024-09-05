@@ -627,7 +627,7 @@ print(f"IP Address: {ip_address}")
 '''
 
 # Ex56 Write a Python program to get height and the width of console window.
-
+'''
 import os, shutil
 
 def get_console_size():
@@ -638,6 +638,38 @@ size = get_console_size()
 
 print(f"Console width: {size.columns}")
 print(f"Console height: {size.lines}")
+'''
+
+# Ex57 Write a Python program to get execution time for a Python method.
+'''
+import time
+
+def example_method():
+    time.sleep(2)
+
+start_time = time.time()
+
+example_method()
+
+stop_time = time.time() 
+
+execution_time = stop_time - start_time
+
+print(f"Execution time: {execution_time}")
+'''
+
+# Ex58 Write a python program to find the sum of the first n positive integers.
+'''
+n = int(input("Please input a positive integer "))
+
+sum = 0
+
+for i in range(n+1):
+    sum = sum + i
+
+print(f"The sum of the first {n} positive integers is {sum}")
+'''
+
 
 
 
