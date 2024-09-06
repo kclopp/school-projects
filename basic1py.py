@@ -670,6 +670,18 @@ for i in range(n+1):
 print(f"The sum of the first {n} positive integers is {sum}")
 '''
 
+# Ex59 Write a Python program to convert height (in feet and inches) to centimeters.
+'''
+feet = float(input("Please input feet: "))
+inches = float(input("Please input inches: "))
+
+newInches = (feet * 12) + inches
+cent = float((feet * 12) + inches) * 2.54
+
+print(f"{feet} feet and {inches} equal {cent} centimeters.")
+'''
+
+
 
 
 
