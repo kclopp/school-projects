@@ -681,6 +681,67 @@ cent = float((feet * 12) + inches) * 2.54
 print(f"{feet} feet and {inches} equal {cent} centimeters.")
 '''
 
+# Ex60 Write a Python program to calculate the hypotenuse of a right angled triangle.
+'''
+import math
+
+base = float(input("Please input the base of the triangle "))
+
+height = float(input("Please input the height of the triangle "))
+
+hypotenuse = math.sqrt((base ** 2) + (height ** 2))
+
+print(f"The hypotenuse of the triangle with base {base} and height {height} is {hypotenuse}")
+'''
+
+# Ex61 Write a Python program to convert the distance (in feet) to inches, yards, and miles.
+'''
+feet = float(input("Please input the distance in feet "))
+
+print(f"{feet} feet is equal to {feet * 12} inches")
+print(f"{feet} feet is equal to {feet / 3} yards")
+print(f"{feet} feet is equal to {feet / 5280} miles")
+'''
+
+# Ex62 Write a Python program to convert all units of time into seconds.
+'''
+years = float(input("Please input the number of years ")) * 31557600
+months = float(input("Please input the number of months ")) * 2629800
+weeks = float(input("Please input the number of weeks ")) * 604800
+days = float(input("Please input the number of days ")) * 86400
+hours = float(input("Please input the number of hours ")) * 3600
+minutes = float(input("Please input the number of minutes ")) * 60
+seconds = float(input("Please input the number of seconds "))
+
+total = int(years + months + weeks + days + hours + minutes + seconds)
+
+print(f"The total number of seconds is {total}")
+'''
+
+# Ex63 Write a Python program to get an absolute file path.
+'''
+import os
+
+print(os.path.abspath(__file__))
+'''
+
+# Ex64 Write a Python program to get file creation and modification date/times.
+'''
+import os, time
+
+print("Last modified: %s" % time.ctime(os.path.getmtime(__file__)))
+print("Created: %s" % time.ctime(os.path.getctime(__file__)))
+'''
+
+
+
+
+
+
+
+
+
+
 
 
 
