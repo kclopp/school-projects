@@ -733,6 +733,22 @@ print("Last modified: %s" % time.ctime(os.path.getmtime(__file__)))
 print("Created: %s" % time.ctime(os.path.getctime(__file__)))
 '''
 
+# Ex65 Write a Python program that converts seconds into days, hours, minutes, and seconds. 
+'''
+seconds = int(input("Please input the number of seconds: "))
+copy = seconds 
+
+days =  int(seconds / 864000)
+seconds = int(seconds % 864000)
+
+hours = int(seconds / 3600)
+seconds = int(seconds % 3600)
+
+minutes = int(seconds / 60)
+seconds = int(seconds % 60)
+
+print(f"There is {days} days, {hours} hours, {minutes} minutes, and {seconds} in {copy} seconds")
+'''
 
 
 
