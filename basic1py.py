@@ -750,6 +750,27 @@ seconds = int(seconds % 60)
 print(f"There is {days} days, {hours} hours, {minutes} minutes, and {seconds} in {copy} seconds")
 '''
 
+# Ex66 Write a Python program to calculate body mass index.
+'''
+weight = float(input("Please input your weight in lbs: "))
+height = float(input("Please input your height in inches: "))
+
+bmi = int((weight / (height ** 2)) * 703)
+
+print(f"Your BMI is {bmi}")
+'''
+
+# Ex67 Write a Python program to convert pressure in kilopascals to pounds per square inch, a millimeter of mercury (mmHg) and atmosphere pressure.
+'''
+kilop = float(input("Please input the pressure in kilopascals: "))
+
+psi = "{:.4f}".format(kilop * 0.14503773773020923).rstrip('0').rstrip('.')
+mmHg = "{:.4f}".format(kilop * 7.50062).rstrip('0').rstrip('.')
+atm = "{:.4f}".format(kilop / 101.325).rstrip('0').rstrip('.')
+
+print(f"{kilop} kilopascals is equal to:\n{psi} psi\n{mmHg} mmHg\n{atm} atm")
+'''
+
 
 
 
