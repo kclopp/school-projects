@@ -771,6 +771,20 @@ atm = "{:.4f}".format(kilop / 101.325).rstrip('0').rstrip('.')
 print(f"{kilop} kilopascals is equal to:\n{psi} psi\n{mmHg} mmHg\n{atm} atm")
 '''
 
+# Ex68 Write a Python program to calculate sum of digits of a number. 
+'''
+n = float(input("Please input a number: "))
+copy = n
+sum = 0
+
+while n > 0:
+    sum = sum + int(n % 10)
+    n = n / 10
+
+print(f"The sum of the digits of {copy} is {sum}")
+'''
+
+
 
 
 
