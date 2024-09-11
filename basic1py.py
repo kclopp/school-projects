@@ -784,6 +784,23 @@ while n > 0:
 print(f"The sum of the digits of {copy} is {sum}")
 '''
 
+# Ex69  Write a Python program to sort three integers without using conditional statements and loops. 
+'''
+number_list = []
+
+number_list.append(int(input("Please input first number: ")))
+number_list.append(int(input("Please input second number: ")))
+number_list.append(int(input("Please input third number: ")))
+
+number_list.sort()
+
+print(number_list)
+'''
+
+
+
+
+
 
 
 
