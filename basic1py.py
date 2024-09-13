@@ -809,20 +809,18 @@ files.sort(key=os.path.getmtime)
 print("\n".join(files))
 '''
 
+# Ex71 Write a Python program to get a directory listing, sorted by creation date.
+'''
+import os
 
+files = os.listdir()
 
+files.sort(key=os.path.getctime)
 
+print("\n".join(files))
+'''
 
-
-
-
-
-
-
-
-
-
-
+# Ex72  Write a Python program to get the details of the math module.
 
 
 
