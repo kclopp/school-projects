@@ -821,9 +821,22 @@ print("\n".join(files))
 '''
 
 # Ex72  Write a Python program to get the details of the math module.
-
+'''
 import math
 
 math_ls = dir(math)
 
 print(math_ls)
+'''
+
+# Ex73 Write a Python program to calculate midpoints of a line.
+
+x1 = float(input("Please input x1 "))
+y1 = float(input("Please input y1 "))
+x2 = float(input("Please input x2 "))
+y2 = float(input("Please input y2 "))
+
+midpoint = ((x1 + x2) / 2, (y1 + y2) / 2)
+
+print(f"The midpoint of the line is {midpoint}")
+
