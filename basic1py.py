@@ -830,7 +830,7 @@ print(math_ls)
 '''
 
 # Ex73 Write a Python program to calculate midpoints of a line.
-
+'''
 x1 = float(input("Please input x1 "))
 y1 = float(input("Please input y1 "))
 x2 = float(input("Please input x2 "))
@@ -839,4 +839,21 @@ y2 = float(input("Please input y2 "))
 midpoint = ((x1 + x2) / 2, (y1 + y2) / 2)
 
 print(f"The midpoint of the line is {midpoint}")
+'''
+
+# Ex74  Write a Python program to hash a word. 
+'''
+import hashlib
+
+word = input("Please input a word: ")
+
+hash_object = hashlib.sha256()
+
+hash_object.update(word.encode('utf-8'))
+
+hash_hex = hash_object.hexdigest()
+
+print(hash_hex)
+'''
+
 
