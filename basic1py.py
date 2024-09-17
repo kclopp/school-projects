@@ -856,4 +856,12 @@ hash_hex = hash_object.hexdigest()
 print(hash_hex)
 '''
 
+# Ex75 Write a Python program to get the copyright information and write Copyright information in Python code.
+'''
+import sys
+
+print(sys.copyright)
+
+print()
+'''
 
