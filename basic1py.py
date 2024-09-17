@@ -865,3 +865,15 @@ print(sys.copyright)
 print()
 '''
 
+# Ex76 Write a Python program to get the command-line arguments (name of the script, the number of arguments, arguments) passed to a script.
+
+import sys
+
+print("This is the name of the script: ", sys.argv[0])
+print("Number of arguments: ", len(sys.argv) - 1)
+print("The arguments are: ", str(sys.argv[1:]))
+
+print()
+
+
+
