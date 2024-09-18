@@ -891,6 +891,19 @@ print(check_endian())
 print()
 '''
 
+# Ex78 Write a Python program to find the available built-in modules.
+'''
+import sys
+
+for module in sys.builtin_module_names:
+    print(module)
+
+print()
+'''
+
+
+
+
 
 
 
