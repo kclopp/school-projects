@@ -901,6 +901,42 @@ for module in sys.builtin_module_names:
 print()
 '''
 
+# Ex79 Write a Python program to get the size of an object in bytes.
+'''
+import sys
+
+str1 = "w3resource"
+
+print(sys.getsizeof(str1))
+
+print()
+'''
+
+# Ex80 Write a Python program to get the current value of the recursion limit.
+'''
+import sys
+
+print(sys.getrecursionlimit())
+
+print()
+'''
+
+# Ex81 Write a Python program to concatenate N strings.
+'''
+strings = input("Please input a string or press enter to be done : ")
+output = ""
+
+while strings != "":
+     output = output + strings
+     strings = input("Please input a string or press enter to be done : ")
+
+
+if output == "":
+    print("No input")
+
+else:
+    print(output)
+'''
 
 
 
