@@ -938,8 +938,12 @@ else:
     print(output)
 '''
 
+#Ex82  Write a Python program to calculate the sum of all items of a container (tuple, list, set, dictionary). 
 
+numList = [1,2,3,4]
 
+total_sum = sum(numList)
 
+print(total_sum)
 
 
