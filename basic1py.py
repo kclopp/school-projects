@@ -939,11 +939,26 @@ else:
 '''
 
 #Ex82  Write a Python program to calculate the sum of all items of a container (tuple, list, set, dictionary). 
-
+'''
 numList = [1,2,3,4]
 
 total_sum = sum(numList)
 
 print(total_sum)
+'''
 
+# Ex 83 Write a Python program to test whether all numbers in a list are greater than a certain number. 
+'''
+num = int(input("Please input a number: "))
+
+numList = [1,2,3,4]
+
+if all(x > num for x in numList):
+
+    print("All numbers are greater than the number")
+
+else:
+    
+        print("Not all numbers are greater than the number")
+'''
 
