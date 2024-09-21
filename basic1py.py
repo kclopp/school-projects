@@ -962,3 +962,20 @@ else:
         print("Not all numbers are greater than the number")
 '''
 
+# Ex 84 Write a Python program to count the number occurrence of a specific character in a string.
+
+srt = input("Please input a string: ")
+
+char = input("Please input a character: ")
+
+count = 0
+
+for i in srt:
+    if i == char:
+    
+            count = count + 1
+
+print(count)
+
+
+
