@@ -963,7 +963,7 @@ else:
 '''
 
 # Ex 84 Write a Python program to count the number occurrence of a specific character in a string.
-
+'''
 srt = input("Please input a string: ")
 
 char = input("Please input a character: ")
@@ -976,6 +976,23 @@ for i in srt:
             count = count + 1
 
 print(count)
+'''
+
+# Ex 85 Write a Python program to check whether a file path is a file or a directory.
+
+import os
+
+def check_path(path):
+    if os.path.isdir(path):
+        return f"{path} is a directory."
+    elif os.path.isfile(path):
+        return f"{path} is a file."
+    else:
+        return f"{path} does not exist or is a special file (e.g., socket, FIFO, device file)."
+
+print(check_path("basic1py.py"))
+
+print(check_path("C:/Users/JohnDoe"))
 
 
 
