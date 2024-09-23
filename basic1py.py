@@ -979,7 +979,7 @@ print(count)
 '''
 
 # Ex 85 Write a Python program to check whether a file path is a file or a directory.
-
+'''
 import os
 
 def check_path(path):
@@ -993,6 +993,31 @@ def check_path(path):
 print(check_path("basic1py.py"))
 
 print(check_path("C:/Users/JohnDoe"))
+'''
+
+# Ex 86 Write a Python program to get the ASCII value of a character.
+'''
+cha1 = input("Please input a character: ")
+
+print(f"The ASCII value of {cha1} is {ord(cha1)}")
+'''
+
+# Ex 87 Write a Python program to get the size of a file.
+'''
+import os
+
+file = input("Please input a file name: ")
+
+print(f"The size of {file} is {os.path.getsize(file)} bytes")
+'''
+
+#  Ex 88 Given variables x=30 and y=20, write a Python program to print "30+20=50". 
+'''
+x = input("Please input a number: ")
+y = input("Please input a number: ")
+
+print(f"{x} + {y} = {int(x) + int(y)}")
+'''
 
 
 
