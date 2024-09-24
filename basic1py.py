@@ -1019,5 +1019,15 @@ y = input("Please input a number: ")
 print(f"{x} + {y} = {int(x) + int(y)}")
 '''
 
+# Ex 89 Write a Python program to perform an action if a condition is true.
+
+n = int(input("Please input a number: "))
+
+if n == 1:
+    print("First day of a Month!")
+else:
+    print("Other day of the Month")
+
+
 
 
