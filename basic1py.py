@@ -1020,13 +1020,27 @@ print(f"{x} + {y} = {int(x) + int(y)}")
 '''
 
 # Ex 89 Write a Python program to perform an action if a condition is true.
-
+'''
 n = int(input("Please input a number: "))
 
 if n == 1:
     print("First day of a Month!")
 else:
     print("Other day of the Month")
+'''
+
+# Ex 90 Write a Python program to create a copy of its own source code.
+'''
+import sys
+
+print(sys.argv[0])
+
+with open(sys.argv[0], 'r') as file:
+
+    print(file.read())
+
+    print()
+'''
 
 
 
