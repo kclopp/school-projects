@@ -1042,6 +1042,18 @@ with open(sys.argv[0], 'r') as file:
     print()
 '''
 
+# Ex 91 Write a Python program to swap two variables.
+'''
+var1 = input("Please input a variable #1: ")
+var2 = input("Please input a variable #2: ")
 
+print(f"Variable #1: {var1}")
+print(f"Variable #2: {var2}")
+
+var1, var2 = var2, var1
+
+print(f"Variable #1: {var1}")
+print(f"Variable #2: {var2}")
+'''
 
 
