@@ -1056,4 +1056,24 @@ print(f"Variable #1: {var1}")
 print(f"Variable #2: {var2}")
 '''
 
+# Ex 92 Write a Python program to define a string containing special characters in various forms.
+'''
+print("\a")
+print("\b")
+print("\f")
+print("\n")
+print("\r")
+print("\t")
+print("\v")
+print("\'")
+print("\"")
+print("\\")
+print("\0")
+print("\ooo")
+'''
+
+
+
+
+
 
