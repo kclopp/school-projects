@@ -11,3 +11,15 @@ print(check_nums([5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5])) # False
 print(check_nums([5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 19])) # False
 print(check_nums([5, 5, 5, 5, 5, 5, 5, 5, 5, 19, 19])) # True
 '''
+
+# 2 Write a Python program that accepts a list of integers and calculates the length and the fifth element. Return true if the length of the list is 8 and the fifth element occurs thrice in the said list. Otherwise return False.
+'''
+intList = input("Enter a list of integers: ").split()
+
+if len(intList) == 8 and intList.count(intList[4]) == 3:
+    print(True)
+else:
+    print(False)
+'''
+
+
