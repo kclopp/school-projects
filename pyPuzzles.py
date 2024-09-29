@@ -22,4 +22,15 @@ else:
     print(False)
 '''
 
+# 3 Write a Python program that accepts an integer and determines whether it is greater than 4^4 and which is 4 mod 34. Return True if it meets the conditions, otherwise return False.
+'''
+n1 = int(input("Enter an integer: "))
+
+if n1 > 4**4 and n1 % 34 == 4:
+    print(True)
+else:
+    print(False)
+'''
+
+
 
