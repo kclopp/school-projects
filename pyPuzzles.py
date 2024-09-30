@@ -32,5 +32,19 @@ else:
     print(False)
 '''
 
+#4 We are making n stone piles! The first pile has n stones. If n is even, then all piles have an even number of stones. If n is odd, all piles have an odd number of stones. Each pile must more stones than the previous pile but as few as possible. Write a Python program to find the number of stones in each pile. 
+'''
+n1 = int(input("Enter the number of piles: "))
+n2 = n1
+l1 =[]
+
+for i in range(n1):
+    l1.append(n2)
+    n2 = n2 +2
+
+print(l1)
+'''
+
+
 
 
