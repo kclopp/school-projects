@@ -45,6 +45,22 @@ for i in range(n1):
 print(l1)
 '''
 
+#5 Write a Python program to check the nth-1 string is a proper substring of the nth string in a given list of strings. Return True if the characters of the nth string are contained in the nth-1 string. Otherwise return False.
+'''
+def check_proper_substring(strings):
+    for i in range(1, len(strings)):
+        if strings[i-1] in strings[i] and strings[i-1] != strings[i]:
+            print(f"'{strings[i-1]}' is a proper substring of '{strings[i]}'")
+        else:
+            print(f"'{strings[i-1]}' is NOT a proper substring of '{strings[i]}'")
+
+# Example usage
+strings = ["hello", "hello world", "world", "worldwide"]
+check_proper_substring(strings)
+
+strings = ["hello", "goodbye", "night", "day"]
+check_proper_substring(strings)
+'''
 
 
 
