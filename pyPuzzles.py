@@ -62,5 +62,25 @@ strings = ["hello", "goodbye", "night", "day"]
 check_proper_substring(strings)
 '''
 
+# 6 Write a Python program to test a list of one hundred integers between 0 and 999, which all differ by ten from one another. Return True otherwise False. 
+'''
+l1 = [i for i in range(0, 1000, 10)]
 
+l2 = [i for i in range(5, 1000, 9)]
 
+def check_list(l0):
+    if len(l0) !=100:
+        return False
+
+    for i in range(1, len(l0)):
+        if l0[i] - l0[i-1] != 10:
+            return False
+        else:
+            return True
+
+print(check_list(l1))
+
+print('*****************************')
+
+print(check_list(l2))
+'''
