@@ -84,3 +84,22 @@ print('*****************************')
 
 print(check_list(l2))
 '''
+
+#7 Write a Python program to check a given list of integers where the sum of the first i integers is i. Return True if the list satisfies the condition, otherwise False.
+'''
+l1 = [1, 2, 3, 4, 5]
+l2 = [1, 1, 1, 1, 1]
+l3 = [2, 2, 2, 2, 2]
+
+def check_list(l0):
+    print(f"The sum of the list is {sum(l0)}")
+    print(f"The length of the list is {len(l0)}")
+    return(sum(l0) == len(l0))
+
+print(check_list(l1))
+print('*****************************')
+print(check_list(l2))
+print('*****************************')
+print(check_list(l3))
+print('*****************************')
+'''
