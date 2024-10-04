@@ -103,3 +103,19 @@ print('*****************************')
 print(check_list(l3))
 print('*****************************')
 '''
+
+#8  Write a Python program to split a string of words separated by commas and spaces into two lists, words and separators. 
+'''
+def split_string(string):
+    import re
+
+    words = re.findall(r'\w+', string)
+    separators = re.findall(r'\W+', string)
+
+    print(f"Words: {words}")
+    print(f"Separators: {separators}")
+
+# Example usage
+
+split_string("The dance, held in the school gym, ended at midnight.")
+'''
