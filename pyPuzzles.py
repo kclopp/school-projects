@@ -119,3 +119,41 @@ def split_string(string):
 
 split_string("The dance, held in the school gym, ended at midnight.")
 '''
+
+#9 Write a Python program to find a list of integers containing exactly four distinct values, such that no integer repeats twice consecutively among the first twenty entries.
+'''
+def gen_list():
+    import random
+
+    l1 = []
+
+    while len(l1) < 20:
+        n1 = random.randint(0, 100)
+        if len(l1) == 0:
+            l1.append(n1)
+        elif l1[-1] != n1:
+            l1.append(n1)
+
+    return(l1)
+
+def check_list(lst1):
+    for i in range(len(lst1) -1):
+        if lst1[i] == lst1[i+1]:
+            stat = False
+            print(f'{lst1[i]} is equal to {lst1[i+1]} at index {i} and {i+1}')
+            break
+        else:
+            stat = True
+
+    print(stat)
+
+lst = gen_list()
+print(lst)
+
+check_list(lst)
+
+lst2 = [25, 66, 46, 25, 10, 100, 3, 25, 14, 13, 87, 89, 7, 27, 96, 39, 39, 67, 88, 42]
+print(lst2)
+check_list(lst2)
+'''
+
