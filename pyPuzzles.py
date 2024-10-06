@@ -157,3 +157,33 @@ print(lst2)
 check_list(lst2)
 '''
 
+#10 Given a string consisting of whitespace and groups of matched parentheses, write a Python program to split it into groups of perfectly matched parentheses without any whitespace. 
+'''
+def split_parentheses(string):
+    string = string.replace(" ", "")
+
+
+    count = 0
+    temp = ''
+    groups = []
+    
+    # Iterate through the string
+    for char in string:
+        temp += char
+        if char == '(':
+            count += 1
+        elif char == ')':
+            count -= 1
+        
+        # When count is zero, we have a balanced group
+        if count == 0 and temp:
+            groups.append(temp)
+            temp = ''
+            
+
+    return groups
+
+input_string = "( ()) ((()()())) (()) ()"
+output_groups = split_parentheses(input_string)
+print(output_groups)
+'''
