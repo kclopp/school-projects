@@ -187,3 +187,18 @@ input_string = "( ()) ((()()())) (()) ()"
 output_groups = split_parentheses(input_string)
 print(output_groups)
 '''
+
+#11 Write a Python program to find the indexes of numbers in a given list below a given threshold. 
+'''
+def find_indexes(lst, threshold):
+    indexes = [i for i in range(len(lst)) if lst[i] < threshold]
+    return indexes
+
+# Example usage
+lst = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+threshold = 5
+indexes = find_indexes(lst, threshold)
+print(indexes)
+'''
+
+
