@@ -202,13 +202,13 @@ print(indexes)
 '''
 
 #12 Write a Python program to check whether the given strings are palindromes or not. Return True otherwise False. 
-
+'''
 def check_pal(string):
     string = string.lower()
     string = string.replace(" ", "")
     return string == string[::-1]
 
 print(check_pal(input("Enter a string: ")))
-
+'''
 
 
