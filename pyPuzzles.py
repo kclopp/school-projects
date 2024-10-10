@@ -211,4 +211,19 @@ def check_pal(string):
 print(check_pal(input("Enter a string: ")))
 '''
 
+#13 Write a Python program to find strings in a given list starting with a given prefix. 
+'''
+def find_strings(lst, prefix):
+    strings = [string for string in lst if string.startswith(prefix)]
+    return strings
+
+# Example usage
+lst = ['hello', 'world', 'python', 'programming']
+prefix = 'p'
+strings = find_strings(lst, prefix)
+print(strings)
+'''
+
+
+
 
