@@ -224,6 +224,18 @@ strings = find_strings(lst, prefix)
 print(strings)
 '''
 
+#14 Write a Python program to find the length of a given list of non-empty strings. 
+'''
+def find_length(lst):
+    lengths = [len(string) for string in lst]
+    return lengths
+
+# Example usage
+lst = ['hello', 'world', 'python', 'programming']
+lengths = find_length(lst)
+print(lengths)
+'''
+
 
 
 
