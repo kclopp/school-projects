@@ -236,6 +236,19 @@ lengths = find_length(lst)
 print(lengths)
 '''
 
+#14 Write a Python program to find the longest string in a given list of strings.
+'''
+def find_longest(lst):
+    longest = max(lst, key=len)
+    return longest
+
+# Example usage
+
+lst = ['hello', 'world', 'python', 'programming']
+longest = find_longest(lst)
+print(longest)
+'''
+
 
 
 
