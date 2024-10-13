@@ -249,6 +249,19 @@ longest = find_longest(lst)
 print(longest)
 '''
 
+#15 Write a Python program to find strings in a given list containing a given substring. 
+'''
+def find_strings(lst, substring):
+    strings = [string for string in lst if substring in string]
+    return strings
+
+# Example usage
+lst = ['hello', 'world', 'python', 'programming']
+substring = 'o'
+strings = find_strings(lst, substring)
+print(strings)
+'''
+
 
 
 
