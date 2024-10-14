@@ -262,6 +262,18 @@ strings = find_strings(lst, substring)
 print(strings)
 '''
 
+#16 Write a Python program to create a string consisting of non-negative integers up to n inclusive. 
+
+def create_string(n):
+    string = ''.join([str(i) for i in range(n+1)])
+    return string
+
+# Example usage
+n = 5
+string = create_string(n)
+print(string)
+
+
 
 
 
