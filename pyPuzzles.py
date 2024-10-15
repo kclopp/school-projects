@@ -263,7 +263,7 @@ print(strings)
 '''
 
 #16 Write a Python program to create a string consisting of non-negative integers up to n inclusive. 
-
+'''
 def create_string(n):
     string = ''.join([str(i) for i in range(n+1)])
     return string
@@ -272,8 +272,21 @@ def create_string(n):
 n = 5
 string = create_string(n)
 print(string)
+'''
 
+#17 An irregular/uneven matrix, or ragged matrix, is a matrix that has a different number of elements in each row. Ragged matrices are not used in linear algebra, since standard matrix transformations cannot be performed on them, but they are useful as arrays in computing.
+# Write a Python program to find the indices of all occurrences of target in the uneven matrix.
+'''
+def find_indices(matrix, target):
+    indices = [(i, j) for i in range(len(matrix)) for j in range(len(matrix[i])) if matrix[i][j] == target]
+    return indices
 
+# Example usage
+matrix = [[1, 2, 8], [4, 5], [6, 7, 8, 9]]
+target = 8
+indices = find_indices(matrix, target)
+print(indices)
+'''
 
 
 
