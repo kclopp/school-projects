@@ -288,7 +288,10 @@ indices = find_indices(matrix, target)
 print(indices)
 '''
 
-#18 Write a Python program to split a given string (s) into strings if there is a space in s, otherwise split on commas if there is a comma, otherwise return the list of lowercase letters in odd order (order of a = 0, b = 1, etc.). 
+#18
+
+
+#19 Write a Python program to split a given string (s) into strings if there is a space in s, otherwise split on commas if there is a comma, otherwise return the list of lowercase letters in odd order (order of a = 0, b = 1, etc.). 
 '''
 def split_string(s):
     if ' ' in s:
