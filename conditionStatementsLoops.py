@@ -15,3 +15,26 @@ def divisibleBy7AndMultipleOf5():
 
 divisibleBy7AndMultipleOf5()
 '''
+
+#2 Write a Python program to convert temperatures to and from celsius, fahrenheit.
+'''
+def convertTemperature():
+    temperature = input("Enter the temperature you want to convert (e.g. 32F, 100C): ")
+    degree = int(temperature[:-1])
+    unit = temperature[-1]
+
+    if unit.upper() == 'C':
+        result = int(round((9 * degree) / 5 + 32))
+        unit = 'Fahrenheit'
+    elif unit.upper() == 'F':
+        result = int(round((degree - 32) * 5 / 9))
+        unit = 'Celsius'
+    else:
+        print("Invalid input. Please enter a valid temperature.")
+        return
+
+    print(f"The temperature in {unit} is {result}.")
+
+convertTemperature()
+'''
+
