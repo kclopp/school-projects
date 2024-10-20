@@ -38,3 +38,30 @@ def convertTemperature():
 convertTemperature()
 '''
 
+#3 Write a Python program to guess a number between 1 to 9.
+'''
+def guessNumber():
+    import random
+    randomNumber = random.randint(1, 9)
+    guess = 0
+    count = 0
+
+    while guess != randomNumber and guess != "exit":
+        guess = input("Enter a number between 1 and 9: ")
+
+        if guess == "exit":
+            break
+
+        guess = int(guess)
+        count += 1
+
+        if guess < randomNumber:
+            print("Too low!")
+        elif guess > randomNumber:
+            print("Too high!")
+        else:
+            print(f"Congratulations! You guessed the number in {count} tries.")
+
+guessNumber()
+'''
+
