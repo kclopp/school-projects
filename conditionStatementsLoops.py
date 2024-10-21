@@ -65,3 +65,17 @@ def guessNumber():
 guessNumber()
 '''
 
+#4 Write a Python program to construct the following pattern, using a nested for loop.
+'''
+def mario():
+    hight = int(input("Enter the hight of the pyramid: "))
+
+    for i in range(hight):
+        print("*" * i)
+
+    for i in range(hight, 0, -1):
+        print("*" * i)
+
+mario()
+'''
+
