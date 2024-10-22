@@ -79,3 +79,12 @@ def mario():
 mario()
 '''
 
+#5 Write a Python program that accepts a word from the user and reverse it.
+'''
+def reverseWord():
+    word = input("Enter a word: ")
+    reversedWord = word[::-1]
+    print(f"The reversed word is: {reversedWord}")
+
+reverseWord()
+'''
