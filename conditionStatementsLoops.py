@@ -119,3 +119,12 @@ def printType():
 printType()
 '''
 
+#8 Write a Python program that prints all the numbers from 0 to 6 except 3 and 6.
+'''
+def printNumbers():
+    for i in range(7):
+        if i != 3 and i != 6:
+            print(i, end=' ')
+
+printNumbers()
+'''
