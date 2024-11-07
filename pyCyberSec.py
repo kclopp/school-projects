@@ -85,5 +85,31 @@ result_variants = get_password_variants(password)
 print(result_variants)
 '''
 
+#5 Write a Python program that reads a file containing a list of passwords, one per line. It checks each password to see if it meets certain requirements (e.g. at least 8 characters, contains both uppercase and lowercase letters, and at least one number and one special character). Passwords that satisfy the requirements should be printed by the program.
+'''
+def passwordChecker(password):
+    import re
+    if len(password) < 8:
+        print("Password does not meet requirements.")
+    if not re.search("[a-z]", password):
+        print("Password does not meet requirements.")
+    if not re.search("[A-Z]", password):
+        print("Password does not meet requirements.")
+    if not re.search("[0-9]", password):
+        print("Password does not meet requirements.")
+    if not re.search("[!@#$%&]", password):
+        print("Password does not meet requirements.")
+    print("Password meets requirements.")
+
+def check_passwords(file_path):
+    with open(file_path, 'r') as file:
+        for line in file:
+            passwordChecker(line.strip())
+
+check_passwords('passwords.txt')
+'''
+
+
+
 
 
