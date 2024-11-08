@@ -107,6 +107,7 @@ def check_passwords(file_path):
             passwordChecker(line.strip())
 
 check_passwords('passwords.txt')
+
 '''
 
 
